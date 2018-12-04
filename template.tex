@@ -1,0 +1,439 @@
+%% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
+%% ---------------------------------
+%% This template should be used for copernicus.cls
+%% The class file and some style files are bundled in the Copernicus Latex Package, which can be downloaded from the different journal webpages.
+%% For further assistance please contact Copernicus Publications at: production@copernicus.org
+%% https://publications.copernicus.org/for_authors/manuscript_preparation.html
+
+
+%% Please use the following documentclass and journal abbreviations for discussion papers and final revised papers.
+
+%% 2-column papers and discussion papers
+\documentclass[journal abbreviation, manuscript]{copernicus}
+
+
+
+%% Journal abbreviations (please use the same for discussion papers and final revised papers)
+
+
+% Advances in Geosciences (adgeo)
+% Advances in Radio Science (ars)
+% Advances in Science and Research (asr)
+% Advances in Statistical Climatology, Meteorology and Oceanography (ascmo)
+% Annales Geophysicae (angeo)
+% Archives Animal Breeding (aab)
+% ASTRA Proceedings (ap)
+% Atmospheric Chemistry and Physics (acp)
+% Atmospheric Measurement Techniques (amt)
+
+
+%% \usepackage commands included in the copernicus.cls:
+%\usepackage[german, english]{babel}
+%\usepackage{tabularx}
+%\usepackage{cancel}
+%\usepackage{multirow}
+%\usepackage{supertabular}
+%\usepackage{algorithmic}
+%\usepackage{algorithm}
+%\usepackage{amsthm}
+%\usepackage{float}
+%\usepackage{subfig}
+%\usepackage{rotating}
+\usepackage{color}
+\usepackage{ulem}
+\usepackage{xspace}
+\usepackage{lineno} \linenumbers*[1]
+\usepackage{siunitx}
+\usepackage{caption}
+\usepackage{underscore}
+%\usepackage[english]{babel}
+\usepackage[dvips]{graphicx}
+%\usepackage{mwe}
+\renewcommand{\thefigure}{\arabic{figure\xspace}}
+\renewcommand{\thetable}{\arabic{table\xspace}}
+
+
+\newcommand\agua{{\bf Agu00}\xspace}
+\newcommand\agub{{\bf Agu06}\xspace}
+\newcommand\aguc{{\bf Agu09}\xspace}
+\newcommand\agud{{\bf Agu12}\xspace}
+
+\newcommand\elca{{\bf Elc00}\xspace}
+\newcommand\elcb{{\bf Elc05}\xspace}
+\newcommand\elcc{{\bf Elc07}\xspace}
+\newcommand\elcd{{\bf Elc10}\xspace}
+
+
+\newcommand\pina{{\bf Pin00}\xspace}
+\newcommand\pinb{{\bf Pin10}\xspace}
+\newcommand\pinc{{\bf Pin14}\xspace}
+\newcommand\pind{{\bf Pin20}\xspace}
+
+
+\begin{document}
+
+
+
+\title{Aerosol microphysics simulations of the Mt.~Pinatubo eruption with the UM-UKCA composition-climate model}
+
+\Author[1,2]{S.~S.}{Dhomse}
+\Author[1,3]{G.~W.}{Mann}
+\Author[1]{K.~S.}{Carslaw}
+\Author[1,2]{M.~P.}{Chipperfield}
+\Author[1]{S.}{Shallcross}
+\Author[1]{L.}{Marshall}
+\Author[4]{N.}{Bellouin}
+\Author[5]{N.~L}{Abraham}
+\Author[6]{C.~E.}{Johnson}
+\Author[7]{F.}{O'Connor}
+
+\affil[1]{School of Earth and Environment, University of Leeds LS2 9JT, UK}
+\affil[2]{National Centre for Earth Observation, University of Leeds LS2 9JT, UK}
+\affil[3]{National Centre for Atmospheric Science (NCAS-Climate), UK}
+\affil[4]{Department of Meteorology, University of Reading, Reading, UK}
+\affil[5]{Department of Chemistry, University of Cambridge, Cambridge, UK}
+\affil[6]{Met Office, Exeter, UK}
+
+
+
+\runningtitle{Tropical eruptions and stratospheric aerosol}
+
+\runningauthor{S. S. Dhomse et al.}
+
+\correspondence{Sandip Dhomse, s.s.dhomse@leeds.ac.uk)}
+
+
+\firstpage{1}
+
+\maketitle
+
+
+
+\begin{abstract}
+Here we use chemistry-composition climate model UM-UKCA with interactive stratospheric chemistry and aerosol microphysics to assess the enhancement to the stratospheric aerosol and associated radiative forcings from the three largest tropical eruptions in the last 60 years: Mt Agung (March 1963), El Chichon (April 1982) and Mt. Pinatubo (June 1991). Accurately characterising the forcing signature from these major eruptions is important for attribution of recent climate change and volcanic effects have been identified as a key requirement for robust attribution of multi-decadal surface temperature trends.
+Aligning with the design of the ISA-MIP co-ordinated multi-model “Historical Eruption SO2 Emissions Assessment”, we have carried out 3-member ensembles of simulations with each of upper, low and mid-point best estimates for SO2 and injection height for each eruption. The 3D model resolves the microphysical-dynamical evolution of the volcanic aerosol plume during global dispersion, with evaluation against satellite, ground-based lidar and in-situ measurements also ensuring the datasets are consistent with a diverse set of observations.
+\end{abstract}
+
+
+
+\begin{abstract}
+Accurate quantification of the the volcanic forcing from the volcanic eruptions is important for better understanding of recent climate change.
+Here we use chemistry-composition climate model UM-UKCA with an interactive stratospheric chemistry and aerosol microphysics
+to assess evolution of stratospheric aerosol and associated radiative forcings from the three largest tropical 
+eruptions over last century: Mt Agung (March 1963), El Chichon (April 1982) and Mt. Pinatubo (June 1991). 
+Aligning with the design of the Interactive Stratospheric Aerosol Model Intercomparison Project (ISA-MIP)
+co-ordinated multi-model “Historical Eruption SO$_2$ Emissions Assessment”, we have 
+carried out 3-member ensembles of simulations with each of upper, low and mid-point best estimates for SO$_2$ injection
+for each eruption. Simulated aerosol properties of volcanic aerosol plume are evaluted against range of
+observation based data sets. Overall, our model simulations suggests that comparted to previous esmtimates 
+much lesser amount of SO$_2$ injection is sufficient to simulate stratospheric aerosol evolution for each of the eruption, suggesting 
+much higher climate efficacy to the stratspheric SO$_2$ injection. 
+Here we show that  up to 10, 7 and 6 Tg  SO$_2$ injection in the stratosphere is
+enough to simulate stratospheric aerosol evolution following Mt. Pinatubo, El-Chichon and Agung eruption, respectively. 
+\end{abstract}
+
+%[[add title text]]
+\section{Model Setup}
+We use United Kingdom Chemistry Climate Model (UM-UKCA), which is combination of  
+UK Met Office Unified Model (UM v8.4) general circulation model coupled
+with the whole atmosphere UK Chemistry and Aerosol scheme (UKCA). 
+Model has a horizontal resolution of 1.875° by 1.25° with 85 vertical 
+levels from surface to about 85 km. In present configuration,  
+the whole-atmosphere chemistry combines detailed 
+stratospheric chemistry and simplified tropospheric chemistry schemes
+ \citep{Morgenstern2009, Oconnor2014}. 
+
+
+The model set-up is similar to the one used to simulate and evaluate evolution of 
+Mount Pinatubo aerosol in \citep{Dhomse2014}. Briefly, stratospheric aerosol
+scheme includes GLOMAP aerosol micro-physics module coupled with UKCA stratospheric
+ chemistry. Greenhouse Gases (GHGs) and ozone depleting substance (ODSs) 
+concentrations are from refC1 simulation recommended in  
+Chemistry–Climate Model Initiative (CCMI-1; \cite{Eyring2013, Morgenstern2017})
+ activity. Simulations are  performed in atmosphere-only mode, and we use CMIP6 
+(Coupled Model Intercomparison Project 6) recommended  sea-surface temperatures 
+and sea-ice concentration that are obtained from https://esgf-node.llnl.gov/projects/cmip6/.  
+Some of key updates since  Dhomse et al. (2014) are i) improved vertical and horizontal 
+resolution (N96L60 vs N192L80) II) coupling between aerosol and radiation scheme \citep{Mann2015} and 
+iii) inclusion of sulfuric particles to form heterogeneously on transported meteoric s
+moke particle cores \citep{Brooks2017}, iv) improvements in wet and dry deposition scheme 
+\citet{Marshall2018} and v) we use prescribed sulphate aerosol surface area (SAD)
+ data from \cite{Arfeuille2013}. 
+
+For each eruption, first we performed 20-year time-slice simulations for a given 
+time period. First 10-year data are considered as a model spin-up.  From remaining 
+10 years, we selected appropriate three initialization files (3-member ensemble)
+ where model QBO phase at 50 hPa is in approximate agreement with QBO50 index from
+ Climate Prediction Center (http://www.cpc.ncep.noaa.gov/data/indices/qbo.u50.index; 
+last accessed 18 August 2018). Control simulations are performed without any simulations.
+ For each eruption, 10-simulations are performed with different combinations of SO$_2$ amount
+with fixed injection height (21-23km), as shown in Table 1.   
+Due to large uncertainties about SO$_2$ injection amount for each eruption, we decided to 
+perform three sensitivity simulations with minimum, mid and maximum SO$_2$ amount. For e.g. 
+for Agung, simulations are performed with 6, 9 and 12 Tg. 
+Hence, ~\agub indicate Mt. Agung eruption with 6 Tg SO$_2$ injection 
+between 21-23 km. And \aguc and \agud  are similar to \agub but
+ with 9 and 12 Tg SO$_2$ injection, respectively, whereas \agub is the
+control simulation without any  emission (background conditions). 
+To avoid complexities due to heterogeneous 
+chemical loss, control simulations use climatological SAD values in the
+stratospheric (mean 1995--2006) and rest of the simulations use time varying SAD from 
+\cite{Arfeuille2013} in the stratospheric chemistry scheme. 
+
+
+
+\section{Data Sets}
+TEXT
+
+
+\subsection{HEADING}
+TEXT
+
+
+\subsubsection{HEADING}
+TEXT
+
+
+\conclusions  %% \conclusions[modified heading if necessary]
+TEXT
+
+%% The following commands are for the statements about the availability of data sets and/or software code corresponding to the manuscript.
+%% It is strongly recommended to make use of these sections in case data sets and/or software code have been part of your research the article is based on.
+
+\codeavailability{TEXT} %% use this section when having only software code available
+
+
+\dataavailability{TEXT} %% use this section when having only data sets available
+
+
+\codedataavailability{TEXT} %% use this section when having data sets and software code available
+
+
+\sampleavailability{TEXT} %% use this section when having geoscientific samples available
+
+
+
+\appendix
+\section{}    %% Appendix A
+
+\subsection{}     %% Appendix A1, A2, etc.
+
+
+\noappendix       %% use this to mark the end of the appendix section
+
+%% Regarding figures and tables in appendices, the following two options are possible depending on your general handling of figures and tables in the manuscript environment:
+
+%% Option 1: If you sorted all figures and tables into the sections of the text, please also sort the appendix figures and appendix tables into the respective appendix sections.
+%% They will be correctly named automatically.
+
+%% Option 2: If you put all figures after the reference list, please insert appendix tables and figures after the normal tables and figures.
+%% To rename them correctly to A1, A2, etc., please add the following commands in front of them:
+
+\appendixfigures  %% needs to be added in front of appendix figures
+
+\appendixtables   %% needs to be added in front of appendix tables
+
+%% Please add \clearpage between each table and/or figure. Further guidelines on figures and tables can be found below.
+
+
+
+\authorcontribution{TEXT} %% optional section
+
+\competinginterests{TEXT} %% this section is mandatory even if you declare that no competing interests are present
+
+\disclaimer{TEXT} %% optional section
+
+\begin{acknowledgements}
+TEXT
+\end{acknowledgements}
+
+
+
+
+%% REFERENCES
+
+%% The reference list is compiled as follows:
+
+\begin{thebibliography}{}
+
+\bibitem[AUTHOR(YEAR)]{LABEL1}
+REFERENCE 1
+
+\bibitem[AUTHOR(YEAR)]{LABEL2}
+REFERENCE 2
+
+\end{thebibliography}
+
+%% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
+%% authors experienced with BibTeX only have to include the following two lines:
+%%
+%% \bibliographystyle{copernicus}
+%% \bibliography{example.bib}
+%%
+%% URLs and DOIs can be entered in your BibTeX file as:
+%%
+%% URL = {http://www.xyz.org/~jones/idx_g.htm}
+%% DOI = {10.5194/xyz}
+
+
+%% LITERATURE CITATIONS
+%%
+%% command                        & example result
+%% \citet{jones90}|               & Jones et al. (1990)
+%% \citep{jones90}|               & (Jones et al., 1990)
+%% \citep{jones90,jones93}|       & (Jones et al., 1990, 1993)
+%% \citep[p.~32]{jones90}|        & (Jones et al., 1990, p.~32)
+%% \citep[e.g.,][]{jones90}|      & (e.g., Jones et al., 1990)
+%% \citep[e.g.,][p.~32]{jones90}| & (e.g., Jones et al., 1990, p.~32)
+%% \citeauthor{jones90}|          & Jones et al.
+%% \citeyear{jones90}|            & 1990
+
+
+
+%% FIGURES
+
+%% When figures and tables are placed at the end of the MS (article in one-column style), please add \clearpage
+%% between bibliography and first table and/or figure as well as between each table and/or figure.
+
+
+%% ONE-COLUMN FIGURES
+
+%%f
+%\begin{figure}[t]
+%\includegraphics[width=8.3cm]{FILE NAME}
+%\caption{TEXT}
+%\end{figure}
+%
+%%% TWO-COLUMN FIGURES
+%
+%%f
+%\begin{figure*}[t]
+%\includegraphics[width=12cm]{FILE NAME}
+%\caption{TEXT}
+%\end{figure*}
+%
+%
+%%% TABLES
+%%%
+%%% The different columns must be seperated with a & command and should
+%%% end with \\ to identify the column brake.
+%
+%%% ONE-COLUMN TABLE
+%
+%%t
+%\begin{table}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{table}
+%
+%%% TWO-COLUMN TABLE
+%
+%%t
+%\begin{table*}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{table*}
+%
+%%% LANDSCAPE TABLE
+%
+%%t
+%\begin{sidewaystable*}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{sidewaystable*}
+%
+%
+%%% MATHEMATICAL EXPRESSIONS
+%
+%%% All papers typeset by Copernicus Publications follow the math typesetting regulations
+%%% given by the IUPAC Green Book (IUPAC: Quantities, Units and Symbols in Physical Chemistry,
+%%% 2nd Edn., Blackwell Science, available at: http://old.iupac.org/publications/books/gbook/green_book_2ed.pdf, 1993).
+%%%
+%%% Physical quantities/variables are typeset in italic font (t for time, T for Temperature)
+%%% Indices which are not defined are typeset in italic font (x, y, z, a, b, c)
+%%% Items/objects which are defined are typeset in roman font (Car A, Car B)
+%%% Descriptions/specifications which are defined by itself are typeset in roman font (abs, rel, ref, tot, net, ice)
+%%% Abbreviations from 2 letters are typeset in roman font (RH, LAI)
+%%% Vectors are identified in bold italic font using \vec{x}
+%%% Matrices are identified in bold roman font
+%%% Multiplication signs are typeset using the LaTeX commands \times (for vector products, grids, and exponential notations) or \cdot
+%%% The character * should not be applied as mutliplication sign
+%
+%
+%%% EQUATIONS
+%
+%%% Single-row equation
+%
+%\begin{equation}
+%
+%\end{equation}
+%
+%%% Multiline equation
+%
+%\begin{align}
+%& 3 + 5 = 8\\
+%& 3 + 5 = 8\\
+%& 3 + 5 = 8
+%\end{align}
+%
+%
+%%% MATRICES
+%
+%\begin{matrix}
+%x & y & z\\
+%x & y & z\\
+%x & y & z\\
+%\end{matrix}
+%
+%
+%%% ALGORITHM
+%
+%\begin{algorithm}
+%\caption{...}
+%\label{a1}
+%\begin{algorithmic}
+%...
+%\end{algorithmic}
+%\end{algorithm}
+%
+%
+%%% CHEMICAL FORMULAS AND REACTIONS
+%
+%%% For formulas embedded in the text, please use \chem{}
+%
+%%% The reaction environment creates labels including the letter R, i.e. (R1), (R2), etc.
+%
+%\begin{reaction}
+%%% \rightarrow should be used for normal (one-way) chemical reactions
+%%% \rightleftharpoons should be used for equilibria
+%%% \leftrightarrow should be used for resonance structures
+%\end{reaction}
+%
+%
+%%% PHYSICAL UNITS
+%%%
+%%% Please use \unit{} and apply the exponential notation
+
+
+\end{document}
